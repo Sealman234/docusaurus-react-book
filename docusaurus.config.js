@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '海豹人的第一個家',
+  title: 'Sealman 未整理筆記',
   tagline: 'Dinosaurs are cool',
   url: 'https://sealman-react-book.netlify.app',
   baseUrl: '/',
@@ -22,17 +22,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', // Serve the docs at the site's root
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
             'https://github.com/Sealman234/docusaurus-react-book/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/Sealman234/docusaurus-react-book/tree/main/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -44,7 +40,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '海豹人的第一個家',
+        title: 'Sealman',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
